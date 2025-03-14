@@ -29,7 +29,7 @@ body {
     height: 0;
     border-left: 120px solid transparent;   /* Borda esquerda transparente */
     border-right: 120px solid transparent;  /* Borda direita transparente */
-    border-bottom: 87px solid #f54c7f;    /* Borda inferior azul (a base do triângulo) */
+    border-bottom: 90px solid #f54c7f;    /* Borda inferior azul (a base do triângulo) */
     position: absolute;
     bottom: 0;
     z-index: 6;
