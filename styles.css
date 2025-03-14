@@ -1,0 +1,143 @@
+/* Centralizar conteudo na tela */
+body {
+    background-color: rgba(248, 151, 199, 0.5);
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    gap: 2rem;
+}
+
+/* Criação do quadrado */
+#quadrado {
+    width: 240px;
+    height: 170px;
+    display: flex;
+    position: relative;
+}
+
+/* Estilo do triângulo */
+.triangulo-3 {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;   /* Borda esquerda transparente */
+    border-right: 120px solid transparent;  /* Borda direita transparente */
+    border-bottom: 87px solid #f54c7f;    /* Borda inferior azul (a base do triângulo) */
+    position: absolute;
+    bottom: 0;
+    z-index: 6;
+}
+
+.triangulo-2 {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;   /* Borda esquerda transparente */
+    border-right: 120px solid transparent;  /* Borda direita transparente */
+    border-top: 90px solid #f54c7f;    /* Borda inferior azul (a base do triângulo) */
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.triangulo-1 {
+    width: 0;
+    height: 0;
+    border-top: 85px solid transparent;   /* Borda esquerda transparente */
+    border-bottom: 85px solid transparent;  /* Borda direita transparente */
+    border-left: 120px solid #f177b4;    /* Borda inferior azul (a base do triângulo) */
+    position: absolute;
+    left: 0;
+    z-index: 4;
+}
+
+.triangulo-4 {
+    width: 0;
+    height: 0;
+    border-top: 85px solid transparent;   /* Borda esquerda transparente */
+    border-bottom: 85px solid transparent;  /* Borda direita transparente */
+    border-right: 120px solid #f177b4;    /* Borda inferior azul (a base do triângulo) */
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+
+
+/* Estilos dos botões */
+#botoes {
+    display: flex;
+    gap: 1rem;
+}
+
+#botoes button {
+    background-color: #f177b4de;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgba(245, 76, 127, 0.4);
+    transition: 0.3s;
+}
+
+#botoes button:hover {
+    background-color: #f54c7f;
+}
+
+
+/* Botão aberto */
+.open {
+    border-bottom: 91px solid #f54c7f;    /* Borda inferior azul (a base do triângulo) */
+    border-top: 0;
+    top: -90px;
+    z-index: 1;
+}
+
+.carta {
+    z-index: 3;
+    height: 60px;
+    width: 195px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    border-radius: 0.3rem;
+    transition: 1.5s;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: #f54c7f;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+
+.on {
+    height: 220px;
+}
+
+/* interno */
+.interno {
+    z-index: 0;
+    background-color: #f54c7f;
+    width: 240px;
+    height: 170px;
+}
+
+#title {
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    margin-bottom: 5rem;
+}
+
+.column {
+    flex-direction: column;
+}
